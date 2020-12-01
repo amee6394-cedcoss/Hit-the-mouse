@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hit the mouse</title>
+    <link rel="stylesheet" href="mole.css">
+</head>
+
+<body>
+    <marquee style="width: max-content;">
+        <h1>Hit the mouse</h1>
+    </marquee>
+    <div class="heading">
+        <div> <label>Current score</label><span class="score">0</span></div>
+        <div style="margin-top: 1%;"><label>High score</label><span class="score" id="hs">0</span></div>
+        <div><button style="margin-top: 2%;" onClick="startGame()">Start!</button></div>
+    </div>
+    <div class="game">
+        <div class="hole hole1">
+            <div class="mole"></div>
+        </div>
+
+        <div class="hole hole2">
+            <div class="mole"></div>
+        </div>
+
+        <div class="hole hole3">
+            <div class="mole"></div>
+        </div>
+
+        <div class="hole hole4">
+            <div class="mole"></div>
+        </div>
+
+        <div class="hole hole5">
+            <div class="mole"></div>
+        </div>
+
+        <div class="hole hole6">
+            <div class="mole"></div>
+        </div>
+
+    </div>
+   <script src="mole.js"></script>
+</body>
+
+</html>
