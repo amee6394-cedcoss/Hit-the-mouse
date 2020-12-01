@@ -11,7 +11,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /* object-fit: cover; */
+    object-fit: cover;
 }
 
 h1 {
