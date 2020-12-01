@@ -11,6 +11,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    /* object-fit: cover; */
 }
 
 h1 {
@@ -84,91 +85,45 @@ button {
     border-radius: 50px;
 }
 
-/* 
-@media (min-width: 667px) and (max-width: 1024px) {
 
-    h1 {
-        display: none;
-    }
-
-    .score {
-        background: white;
-        padding: 0 12px;
-        line-height: 1;
-        border-radius: 16px;
-        color: black;
-        font-size: 40px;
-        margin-left: 20px;
-    }
-
-    .hole.up .mole {
-        top: 17px;
-    }
-}
-
-@media (max-width: 667px) {
-
-    .game {
-        width: 667px;
-        height: 300px;
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0 auto;
-    }
-
-    .score {
-        width: 35px;
-        font-size: 15px;
-        height: 40px;
-        color: black;
-        background-color: white;
-        border-radius: 10px;
-        margin-left: 10px;
-        margin-top: 10px;
-        padding: 5px;
-    }
-
-    button {
-        margin: 10px 10px 10px 10px;
-        height: 30px;
-        width: 75px;
-        font-size: 10px;
-    }
-
-    .hole:after {
-        display: block;
-        background: url(dirt.png) bottom center no-repeat;
-        background-size: contain;
-        content: '';
-        max-width: 70%;
-        /* height: 60px; */
-        /* position: absolute;
-        z-index: 2;
-        bottom: -30px;
-    }
-
-    .mole {
-        background: url('jerry.gif') bottom center no-repeat;
-        background-size: 60%;
-        position: absolute;
-        top: 100%;
-        max-width: 70%;
-        height: 70%;
-        transition: all 0.4s;
-    }
-
-    .hole.up .mole {
-        top: 50px;
-    }
-} */ 
 @media (min-width:320px) and (max-width:552px)
 {
+
+html {
+    font-size: 20px;
+
+}
+    h1 {
+    text-align: center;
+    font-size: 30px;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.hole {
+
+flex: 1 0 50%;
+}
+.game{
+    width: 275px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    margin-top: 42%;
+
+}
+}
+@media (min-width:320px) and (max-width:320px)
+{
     .game{
-        margin: 57% auto;
-    }
-    .heading{
-        margin-left: 39%;
-        width: max-content;
-        margin-top: 19%;
-    }
+    width: 275px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    margin-top: 13%; 
+}
 }
