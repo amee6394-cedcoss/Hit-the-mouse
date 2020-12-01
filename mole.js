@@ -7,7 +7,7 @@ let timeUp = false;
 let score = 0;
 var x = 0;
 var y = 0;
-
+var bgm1=document.getElementById("bgm");
 function randomTime(min, max) {
     return Math.round(Math.random() * (max - min) + min);
 }
@@ -36,6 +36,7 @@ function peep() {
 }
 
 function startGame() {
+    bgm1.play();
     if (score >= y) {
         y=x;
 
