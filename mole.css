@@ -127,3 +127,82 @@ flex: 1 0 50%;
     margin-top: 13%; 
 }
 }
+@media (min-width:568px) and (max-width:580px)
+{
+    html {
+    font-size: 20px;
+
+}
+    h1 {
+    text-align: center;
+    font-size: 30px;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.hole {
+
+flex: 1 0 33.33%;
+}
+button {
+    width: 125px;
+    font-size: 20px;
+    height: 27px;
+    color: black;
+    background-color: rosybrown;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 90px;
+    border-radius: 50px;
+}
+.game{
+    width: 500px;
+    height: 198px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    margin-top: 0%;
+}
+.heading{
+ height: 59px;
+}
+}
+@media (min-width:640px) and (max-width:823px)
+{
+    html {
+    font-size: 20px;
+
+}
+    h1 {
+    text-align: center;
+    font-size: 30px;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.hole {
+
+flex: 1 0 33.33%;
+}
+.game{
+    width: 500px;
+    height: 198px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    margin-top: 0%;
+}
+@media (min-width: 768px) and (max-width: 770px){
+    .game{
+        width: 500px;
+    height: 252px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    margin-top: 33%;
+}
+}
+}
