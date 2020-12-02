@@ -12,6 +12,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     object-fit: cover;
+    min-height: 100%;
 }
 
 h1 {
