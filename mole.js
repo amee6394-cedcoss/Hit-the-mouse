@@ -37,6 +37,7 @@ function peep() {
 
 function startGame() {
     bgm1.play();
+    var count=21;
     if (score >= y) {
         y=x;
 
@@ -47,6 +48,13 @@ function startGame() {
         console.log("h1")
         document.getElementById("hs").innerHTML = y;
     }
+    var iin=setInterval(function(){
+        --count
+        document.getElementById("time").innerHTML=count;
+        if(count<=0){
+            clearInterval(iin)
+        }
+    },1000)
     scoreBoard.textContent = 0;
     timeUp = false;
     score = 0;
