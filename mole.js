@@ -1,13 +1,14 @@
-
 const holes = document.querySelectorAll('.hole');
 const scoreBoard = document.querySelector('.score');
-const moles = document.querySelectorAll('.mole');
+const moles = document.querySelectorAll('.mole');  
 let lastHole;
 let timeUp = false;
 let score = 0;
 var x = 0;
 var y = 0;
 var bgm1=document.getElementById("bgm");
+var sound=document.getElementById("sound");
+
 function randomTime(min, max) {
     return Math.round(Math.random() * (max - min) + min);
 }
@@ -63,13 +64,20 @@ function startGame() {
 }
 
 function wack(e) {
+    var soundflag=true;
     if (!e.isTrusted) return;
     score++;
     localStorage.setItem("S",score);
     this.parentNode.classList.remove('up')
     scoreBoard.textContent = score;
     x = localStorage.getItem("S");
-    console.log(x);
+    if(soundflag){
+        sound.pause();
+        sound.currentTime=0;
+        sound.play();
+        soundflag=false;
+    }
+    
 }
 
 moles.forEach(mole => mole.addEventListener('click', wack))
